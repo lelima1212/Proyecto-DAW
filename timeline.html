@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+		<head>
+			<title> PoliFinder</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta charset = "utf-8">
+			<meta name = "description" content = “Proyecto DAW””>
+			<meta name = "keywords" content = "Buscar, Aulas">
+			
+		    <!--CSS-->
+			<link rel="stylesheet" href="css/estilo_index.css" type="text/css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!--leaflet-->
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+			integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+			crossorigin=""/>
+			<link rel="stylesheet" href="jquery-ui.min.css">
+			<!--JS-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+			integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+			crossorigin=""></script>
+			<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+			<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+			<script src="jquery-ui.min.js"></script>
+			<style>
+				   .ui-autocomplete {
+						max-height: 200px;
+						overflow-y: auto;
+						/* prevent horizontal scrollbar */
+						overflow-x: hidden;
+						/* add padding to account for vertical scrollbar */
+						padding-right: 20px;
+					} 
+					
+			</style>
+		</head>
+		<body>
+			<div class="container">
+				<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #1A2421;">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								                        
+							</button>
+							<a class="navbar-brand" href="Index.html">PoliFinder</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="Index.html">Inicio</a></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown">Acerca
+									<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="acerca.html">Vision y mision</a></li>
+										<li><a href="Desarrolladores.html">Desarrolladores</a></li>
+										<li><a href="timeline.html">Linea de Tiempo</a></li>
+									</ul>
+								</li>
+								<li><a href="galeria.html">Galeria</a></li>
+								<li><a href="faqs.html">FAQ's</a></li>
+								<li><a href="contacto.html">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="container-fluid" id="contenido" >
+					<div class="row">
+						
+						<div class="col-lg-12">
+							
+							<div class="jumbotron">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="page-header">
+										  <h1>Horizontal timeline</h1>
+										</div>
+										<div style="display:inline-block;width:100%;overflow-y:auto;">
+										<ul class="timeline timeline-horizontal">
+											<li class="timeline-item">
+												<div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
+												<div class="timeline-panel">
+													<div class="timeline-heading">
+														<h4 class="timeline-title">Mussum ipsum cacilds 1</h4>
+														<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+													</div>
+													<div class="timeline-body">
+														<p>Mussum ipsum cacilds, vidis litro abertis. Consetis faiz elementum girarzis, nisi eros gostis.</p>
+													</div>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+												<div class="timeline-panel">
+													<div class="timeline-heading">
+														<h4 class="timeline-title">Mussum ipsum cacilds 2</h4>
+														<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+													</div>
+													<div class="timeline-body">
+														<p>Mussum ipsum cacilds, vidis faiz elementum girarzis, nisi eros gostis.</p>
+													</div>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-badge info"><i class="glyphicon glyphicon-check"></i></div>
+												<div class="timeline-panel">
+													<div class="timeline-heading">
+														<h4 class="timeline-title">Mussum ipsum cacilds 3</h4>
+														<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+													</div>
+													<div class="timeline-body">
+														<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipisci. Mé faiz elementum girarzis, nisi eros gostis.</p>
+													</div>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-badge danger"><i class="glyphicon glyphicon-check"></i></div>
+												<div class="timeline-panel">
+													<div class="timeline-heading">
+														<h4 class="timeline-title">Mussum ipsum cacilds 4</h4>
+														<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+													</div>
+													<div class="timeline-body">
+														<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+													</div>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+												<div class="timeline-panel">
+													<div class="timeline-heading">
+														<h4 class="timeline-title">Mussum ipsum cacilds 5</h4>
+														<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+													</div>
+													<div class="timeline-body">
+														<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+													</div>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+												<div class="timeline-panel">
+													<div class="timeline-heading">
+														<h4 class="timeline-title">Mussum ipsum cacilds 6</h4>
+														<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+													</div>
+													<div class="timeline-body">
+														<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="footer" id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+								<h3> Lorem Ipsum </h3>
+								<ul>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+								</ul>
+							</div>
+							<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+								<h3> Lorem Ipsum </h3>
+								<ul>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+								</ul>
+							</div>
+							<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+								<h3> Lorem Ipsum </h3>
+								<ul>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+								</ul>
+							</div>
+							<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+								<h3> Lorem Ipsum </h3>
+								<ul>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+									<li> <a href="#"> Lorem Ipsum </a> </li>
+								</ul>
+							</div>
+							<div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+								<h3> Contactenos </h3>
+								<ul>
+									<li>
+										<div class="input-append newsletter-box text-center">
+											<input type="text" class="full text-center" placeholder="Email ">
+											<button class="btn  bg-gray" type="button"> lgcruz@espol.edu.ec <i class="fa fa-long-arrow-right"> </i> </button>
+										</div>
+									</li>
+								</ul>
+								<ul class="social">
+									<li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+									<li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+									<li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+									<li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+									<li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+								</ul>
+							</div>
+						</div>
+						<!--/.row--> 
+					</div>
+					<!--/.container--> 
+				</div>
+				<!--/.footer-->
+    
+				<div class="footer-bottom">
+					<div class="container">
+						<p class="pull-left"> Copyright © Footer E-commerce Plugin 2014. All right reserved. </p>
+						<div class="pull-right">
+							<ul class="nav nav-pills payments">
+                				<li><i class="fa fa-cc-visa"></i></li>
+								<li><i class="fa fa-cc-mastercard"></i></li>
+								<li><i class="fa fa-cc-amex"></i></li>
+								<li><i class="fa fa-cc-paypal"></i></li>
+							</ul> 
+						</div>
+					</div>
+				</div>
+				<!--/.footer-bottom--> 
+			</footer>
+			<script src="js/leafletjs.js"></script>
+		</body>
+</html>
