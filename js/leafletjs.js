@@ -8,7 +8,7 @@ jQuery.ui.autocomplete.prototype._resizeMenu = function () {
 	ul.outerWidth(this.element.outerWidth());
 }
 var marker = L.marker([-2.147,-79.964]);
-
+mymap.options.minZoom=16;
 
 $( function() {
     
@@ -405,7 +405,7 @@ $( function() {
 			mymap.setView(marker.getLatLng(),18.25);
 		}
     });
-	$( "#tags2" ).catcomplete({
+	/*$( "#tags2" ).catcomplete({
 		delay: 0,
 		source: data,
 		select: function (event, ui) {
@@ -415,5 +415,5 @@ $( function() {
 			marker.bindPopup(ui.item.label).openPopup();
 			mymap.setView(marker.getLatLng(),18.25);
 		}
-    });
+    });*/
   } );
